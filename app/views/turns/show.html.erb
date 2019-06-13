@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @turn.user.name %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @turn.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @turn.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_turn_path(@turn) %> |
+<%= link_to 'Back', turns_path %>
